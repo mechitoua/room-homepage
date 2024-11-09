@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Room Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Built with](#built-with)
+- [Project Links](#links)
+- [Useful resources](#useful-resources)
+- [Author](#author)
+- [How to run the project locally](#how-to-run-the-project-locally)
 
-Currently, two official plugins are available:
+### The challenge
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users should be able to:
 
-## Expanding the ESLint configuration
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Navigate the slider using either their mouse/trackpad or keyboard
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Screenshot
 
-- Configure the top-level `parserOptions` property like this:
+![](./public/desktop-preview.jpg)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Links
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Live Site URL: []()
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Built with
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Semantic HTML5 markup
+- Typescript
+- React
+- Tailwindcss
+- Swiper.js
+- Lucide-icons
+- Vite
+
+### Useful resources
+
+- [React](https://reactjs.org/) - JS library
+- [Typescript](https://www.typescriptlang.org/) - For type checking
+- [Tailwindcss](https://tailwindcss.com/) - For styles
+- [Vite](https://vitejs.dev/) - For bundling
+- [Swiper](https://swiperjs.com/) - For slider
+- [lucide-icons](https://lucide.dev/) - For icons
+
+## Author
+
+- Frontend Mentor - [@mechitoua](https://www.frontendmentor.io/profile/mechitoua)
+- Github - [@mechitoua](https://www.github.com/mechitoua)
+- Twitter - [@mechitoua_amine](https://www.twitter.com/mechitoua_amine)
+
+## How to run the project locally
+
+1. Clone the project `git clone https://github.com/mechitoua/room-homepage.git`
+2. Run `pnpm install`
+3. Run `pnpm dev`
+4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
