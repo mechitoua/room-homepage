@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply bg-slate-600;
+}
+
+@layer base {
+  html {
+    font-family: 'League Spartan', system-ui, sans-serif;
+  }
+}
+
+.nav-item {
+  @apply hover:text-white relative py-2 font-medium font-spartan;
+}
+.nav-item-mobile {
+  @apply text-very-dark-gray hover:text-dark-gray relative py-2 text-sm font-bold font-spartan;
+}
+.hover {
+  @apply absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-white transform -translate-x-1/2 scale-x-0 transition-transform group-hover:scale-x-100;
+}
+.hober-mobile {
+  @apply absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-very-dark-gray transform -translate-x-1/2 scale-x-0 transition-transform group-hover:scale-x-100;
+}
+
+.swiper-pagination-bullet {
+  @apply w-2 h-2 bg-white opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-black;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-white !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-sm !important;
+}
+
+.swiper-button-disabled {
+  @apply opacity-50 cursor-not-allowed !important;
+}
