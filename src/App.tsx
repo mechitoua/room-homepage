@@ -4,7 +4,7 @@ import Slider from '@components/Slider';
 
 function App() {
   return (
-    <div>
+    <div className='h-full'>
       <Navbar />
       <Slider />
       <AboutSection />
