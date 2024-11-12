@@ -11,7 +11,7 @@ const AboutSection: FC = () => {
         />
       </div>
       <div className='px-8 py-12 md:col-span-6 md:px-16 md:py-12 flex flex-col justify-center bg-white'>
-        <h2 className='text-lg tracking-[0.5em] font-bold mb-4 font-spartan text-very-dark-gray'>
+        <h2 className='text-[0.95rem] md:text-lg tracking-[0.5em] font-bold mb-4 font-spartan text-very-dark-gray'>
           ABOUT OUR FURNITURE
         </h2>
         <p className='text-dark-gray leading-snug text-[1.05rem]'>
