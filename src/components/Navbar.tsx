@@ -5,7 +5,7 @@ const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <main>
       <nav className='fixed top-0 left-0 z-50 w-full md:w-[58.333333%]'>
         <div className='px-8 py-8 md:px-12 md:py-8'>
           <div className='flex items-center justify-between md:justify-start'>
@@ -20,22 +20,30 @@ const Navbar: FC = () => {
             <div className='flex-1 md:flex-none'></div>
             <div className='hidden md:block ml-10'>
               <div className='flex items-baseline space-x-10 text-white text-md'>
-                <a href='#' className='nav-item ml-6 group'>
+                <button
+                  aria-label='home'
+                  className='nav-item ml-6 group border-none bg-none cursor-pointer'>
                   home
                   <span className='hover'></span>
-                </a>
-                <a href='#' className='nav-item group'>
+                </button>
+                <button
+                  className='nav-item group border-none bg-none cursor-pointer'
+                  aria-label='shop'>
                   shop
                   <span className='hover'></span>
-                </a>
-                <a href='#' className='nav-item group'>
+                </button>
+                <button
+                  className='nav-item group border-none bg-none cursor-pointer'
+                  aria-label='about'>
                   about
                   <span className='hover'></span>
-                </a>
-                <a href='#' className='nav-item group'>
+                </button>
+                <button
+                  className='nav-item group border-none bg-none cursor-pointer'
+                  aria-label='contact'>
                   contact
                   <span className='hover'></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -52,23 +60,39 @@ const Navbar: FC = () => {
               <X className='h-6 w-6' />
             </button>
             <div className='flex space-x-8 font-bold'>
-              <a href='#' className='nav-item-mobile'>
+              <a
+                href='/home'
+                aria-roledescription='button'
+                aria-label='home'
+                className='nav-item-mobile'>
                 home
               </a>
-              <a href='#' className='nav-item-mobile'>
+              <a
+                href='/shop'
+                className='nav-item-mobile'
+                aria-label='shop'
+                aria-roledescription='button'>
                 shop
               </a>
-              <a href='#' className='nav-item-mobile'>
+              <a
+                href='/about'
+                className='nav-item-mobile'
+                aria-label='about'
+                aria-roledescription='button'>
                 about
               </a>
-              <a href='#' className='nav-item-mobile'>
+              <a
+                href='/contact'
+                className='nav-item-mobile'
+                aria-label='contact'
+                aria-roledescription='button'>
                 contact
               </a>
             </div>
           </div>
         </div>
       )}
-    </>
+    </main>
   );
 };
 
