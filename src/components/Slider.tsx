@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Slider: FC = () => {
   return (
-    <main>
+    <>
       <div className='h-screen md:h-[70vh] relative'>
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -68,7 +68,7 @@ const Slider: FC = () => {
             className='swiper-button-next w-24 h-24 bg-black hover:bg-very-dark-gray transition-colors !static flex items-center justify-center'></button>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 

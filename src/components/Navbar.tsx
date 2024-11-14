@@ -5,7 +5,7 @@ const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <main>
+    <>
       <nav className='fixed top-0 left-0 z-50 w-full md:w-[58.333333%]'>
         <div className='px-8 py-8 md:px-12 md:py-8'>
           <div className='flex items-center justify-between md:justify-start'>
@@ -92,7 +92,7 @@ const Navbar: FC = () => {
           </div>
         </div>
       )}
-    </main>
+    </>
   );
 };
 
